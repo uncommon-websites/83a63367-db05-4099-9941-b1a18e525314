@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconZap from "~icons/lucide/zap";
+	import IconUnlock from "~icons/lucide/unlock";
+	import IconTrendingUp from "~icons/lucide/trending-up";
+	import IconEye from "~icons/lucide/eye";
+	import IconShield from "~icons/lucide/shield";
 </script>
 
 <Hero
@@ -36,62 +44,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="The problem we solve"
+	text="Growth teams at scaling SaaS companies move fast, but dev bottlenecks turn landing page launches from hours into weeks. Flint's autonomous AI agents internalize your brand system and generate pixel-perfect, on-brand landing pages at scale—so your campaigns go live the same day, not the same month."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maya Chen",
+			position: "Director of Growth Marketing",
+			company: "CloudScale",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We launched 12 campaign pages in three weeks instead of waiting months for dev resources. Flint paid for itself in the first sprint.",
+			image: "/generated/image-environmental-portrait-professional-asia.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Head of Demand Generation",
+			company: "DataPulse",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"No more brand inconsistency nightmares. Every page matches our design system perfectly, and our CEO actually stopped sending revision requests.",
+			image: "/generated/image-collaborative-cluster-professional-black.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Sofia Rodriguez",
+			position: "VP of Marketing",
+			company: "Velocity",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Cut our landing page costs by 60% while tripling output. Our agency was billing $8K per page. Now we ship same-day for pennies.",
+			image: "/generated/image-environmental-portrait-professional-hisp.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for growth teams who move fast"
+	subtitle="Autonomous AI agents that understand your brand system and generate pixel-perfect landing pages at scale."
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Brand system intelligence",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"AI agents that internalize your design tokens, components, and brand guidelines to generate pages that look like your design team built them. No more off-brand pages or manual QA.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
+			title: "Ship in hours, not weeks",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"From concept to live page in the same day. Launch campaigns when your audience is ready, not when dev capacity opens up.",
+			icon: IconZap
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Zero dev dependency",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Growth teams get full autonomy to create, iterate, and publish landing pages without entering the dev queue. Your engineers stay focused on product.",
+			icon: IconUnlock
+		},
+		{
+			title: "Scale without compromise",
+			description:
+				"Run unlimited campaigns while maintaining perfect brand consistency across every page. The more you ship, the smarter the system becomes.",
+			icon: IconTrendingUp
+		},
+		{
+			title: "Same-day live demos",
+			description:
+				"See your actual brand come to life in a working landing page before you commit. No mockups, no guessing.",
+			icon: IconEye
+		},
+		{
+			title: "Enterprise-grade infrastructure",
+			description:
+				"Built on secure, scalable architecture that growing SaaS companies trust with their most important campaigns.",
+			icon: IconShield
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="See your brand live in hours"
+	subtitle="Not weeks"
+	description="Stop waiting on dev queues. Get a same-day demo with your actual brand system—no mockups, no guessing, no risk. See exactly how Flint generates pixel-perfect landing pages before you commit."
+	imageSrc="/generated/image-environmental-portrait-a-happy-confident.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Get your demo today",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "See how it works",
+			variant: "secondary"
+		}
+	]}
+/>
